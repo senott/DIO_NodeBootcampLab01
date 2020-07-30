@@ -1,4 +1,6 @@
-const passwordGenerator = require(`password-generator`)
+import passwordGenerator from "password-generator"
+
+import Queue from "../lib/Queue"
 
 export default {
     async store(req, res) {
@@ -9,6 +11,8 @@ export default {
             email,
             password: passwordGenerator(15, false)
         }
+
+        await Queue.add(`RegistrationEmail`, { user })
 
         return res.json(user)
     }

@@ -1,5 +1,5 @@
-const dotenv = require(`dotenv`).config()
-const express = require(`express`)
+import "dotenv/config"
+import express from "express"
 
 import UserController from './app/controllers/UserController'
 

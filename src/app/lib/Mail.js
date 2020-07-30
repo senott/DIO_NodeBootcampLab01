@@ -1,5 +1,4 @@
-const nodemailer = require('nodemailer')
-const mailConfig = require(`../../config/mail`)
+import nodemailer from "nodemailer"
+import mailConfig from "../../config/mail"
 
-// mailtrap.io
 export default nodemailer.createTransport(mailConfig)
