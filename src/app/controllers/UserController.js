@@ -12,7 +12,7 @@ export default {
             password: passwordGenerator(15, false)
         }
 
-        await Queue.add(`RegistrationEmail`, { user })
+        await Queue.add(`RegistrationMail`, { user })
 
         return res.json(user)
     }
