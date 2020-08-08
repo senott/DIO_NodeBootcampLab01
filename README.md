@@ -1,14 +1,15 @@
-REDIS: 
+### REDIS:  
     $ docker run --name lab01redis -p 6379:6379 --detach redis 
   
-To run application: 
-$ yarn start
+### To run application:  
+Start Redis and then:  
+    $ yarn start
   
 ### DATABASE:  
-    To create a new migration:  
+To create a new migration:  
     $ yarn knex migrate:make <migration-name>  
     
-    To run the latest migrations:  
+To run the latest migrations:  
     $ yarn knex migrate:latest  
   
 ### Additions to the original project:  
