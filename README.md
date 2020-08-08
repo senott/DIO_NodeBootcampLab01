@@ -4,5 +4,11 @@ REDIS:
 To run application:
 $ npm start
 
+To create a new migration:
+$ yarn knex migrate:make <migration-name>
+
+To run the latest migrations:
+$ yarn knex migrate:latest
+
 Additions to the original project:
 - SQLite database
