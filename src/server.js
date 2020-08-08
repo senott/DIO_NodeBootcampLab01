@@ -1,9 +1,9 @@
-import "dotenv/config.js"
-import express from "express.js"
-import BullBoard from "bull-board.js"
+import "dotenv/config"
+import express from "express"
+import BullBoard from "bull-board"
 
-import UserController from './app/controllers/UserController.js'
-import Queue from "./app/lib/Queue.js"
+import UserController from './app/controllers/UserController'
+import Queue from "./app/lib/Queue"
 
 const app = express()
 
