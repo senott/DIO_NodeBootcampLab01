@@ -1,6 +1,6 @@
 import passwordGenerator from "password-generator"
 
-import Queue from "../lib/Queue"
+import Queue from "../lib/Queue.js"
 
 export default {
     async store(req, res) {

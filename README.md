@@ -3,3 +3,6 @@ REDIS:
 
 To run application:
 $ npm start
+
+Additions to the original project:
+- SQLite database
