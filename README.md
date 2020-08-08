@@ -1,4 +1,4 @@
-## Additions to the original project:  
+### Additions to the original project:  
 - SQLite database  
 
 ## REDIS:  
