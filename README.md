@@ -3,13 +3,16 @@
   
 ### To run application:  
 Start Redis and then:  
+
     $ yarn start
   
 ### DATABASE:  
 To create a new migration:  
+
     $ yarn knex migrate:make <migration-name>  
     
 To run the latest migrations:  
+
     $ yarn knex migrate:latest  
   
 ### Additions to the original project:  
