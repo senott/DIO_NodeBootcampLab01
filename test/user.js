@@ -1,8 +1,8 @@
 process.env.NODE_ENV = 'test'
 
-import chai from 'chai.js'
-import chaiHttp from 'chai-http.js'
-import server from '../src/server.js'
+import chai from 'chai'
+import chaiHttp from 'chai-http'
+import server from '../src/server'
 import should from chai.should
 
 chai.use(chaiHttp)
@@ -21,7 +21,7 @@ describe(`POST users`, () => {
             .send(user)
             .end((err, res) => {
                 res.should.have.status(200)
-                res.boby.should.be.a(`object`)
+                res.body.should.be.a(`object`)
                 res.body.user.should.have.property('name')
                 res.body.user.should.have.property('email')
                 res.body.user.should.have.property('password')
