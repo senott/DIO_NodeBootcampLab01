@@ -1,9 +1,9 @@
 process.env.NODE_ENV = 'test'
 
-import chai from 'chai.js'
-import chaiHttp from 'chai-http.js'
-import server from '../src/server.js'
-import should from chai.should
+import chai from 'chai'
+import chaiHttp from 'chai-http'
+import server from '../src/server'
+import chaiShould from chai.should
 
 chai.use(chaiHttp)
 
@@ -20,8 +20,8 @@ describe(`POST users`, () => {
             .post(`/users`)
             .send(user)
             .end((err, res) => {
-                res.should.have.status(200)
-                res.boby.should.be.a(`object`)
+                res.chaiShould.have.status(200)
+                res.body.should.be.a(`object`)
                 res.body.user.should.have.property('name')
                 res.body.user.should.have.property('email')
                 res.body.user.should.have.property('password')
@@ -32,4 +32,5 @@ describe(`POST users`, () => {
 
 /*
 * https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai
+* https://mherman.org/blog/test-driven-development-with-node/
 */

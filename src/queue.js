@@ -1,4 +1,4 @@
-import "dotenv/config.js"
-import Queue from "./app/lib/Queue.js"
+import 'dotenv/config'
+import Queue from './app/lib/Queue'
 
 Queue.process()

@@ -1,4 +1,4 @@
-import Mail from "../lib/Mail.js"
+import Mail from "../lib/Mail"
 
 export default {
     key: `RegistrationMail`,

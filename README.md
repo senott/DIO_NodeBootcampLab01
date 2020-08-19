@@ -1,8 +1,20 @@
-REDIS:
-    $ docker run --name lab01redis -p 6379:6379 --detach redis
+### Additions to the original project:  
+- SQLite database  
 
-To run application:
-$ npm start
+## REDIS:  
+    $ docker run --name lab01redis -p 6379:6379 --detach redis 
+  
+## To run application:  
+Start Redis and then:  
 
-Additions to the original project:
-- SQLite database
+    $ yarn start
+  
+## DATABASE:  
+To create a new migration:  
+
+    $ yarn knex migrate:make <migration-name>  
+    
+To run the latest migrations:  
+
+    $ yarn knex migrate:latest  
+ 
